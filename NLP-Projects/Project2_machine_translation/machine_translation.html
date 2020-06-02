@@ -13126,8 +13126,12 @@ div#notebook {
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>Using TensorFlow backend.
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Device mapping:
+/job:localhost/replica:0/task:0/device:XLA_CPU:0 -&gt; device: XLA_CPU device
+/job:localhost/replica:0/task:0/device:XLA_GPU:0 -&gt; device: XLA_GPU device
+/job:localhost/replica:0/task:0/device:GPU:0 -&gt; device: 0, name: GeForce RTX 2060 SUPER, pci bus id: 0000:08:00.0, compute capability: 7.5
+
 </pre>
 </div>
 </div>
@@ -13137,12 +13141,8 @@ div#notebook {
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Device mapping:
-/job:localhost/replica:0/task:0/device:XLA_CPU:0 -&gt; device: XLA_CPU device
-/job:localhost/replica:0/task:0/device:XLA_GPU:0 -&gt; device: XLA_GPU device
-/job:localhost/replica:0/task:0/device:GPU:0 -&gt; device: 0, name: GeForce RTX 2060 SUPER, pci bus id: 0000:08:00.0, compute capability: 7.5
-
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Using TensorFlow backend.
 </pre>
 </div>
 </div>
@@ -13231,30 +13231,30 @@ device_type: &#34;CPU&#34;
 memory_limit: 268435456
 locality {
 }
-incarnation: 7010005091219373552
+incarnation: 3660399292857681913
 , name: &#34;/device:XLA_CPU:0&#34;
 device_type: &#34;XLA_CPU&#34;
 memory_limit: 17179869184
 locality {
 }
-incarnation: 5020543505501510410
+incarnation: 13171377335830405871
 physical_device_desc: &#34;device: XLA_CPU device&#34;
 , name: &#34;/device:XLA_GPU:0&#34;
 device_type: &#34;XLA_GPU&#34;
 memory_limit: 17179869184
 locality {
 }
-incarnation: 10008839432507980106
+incarnation: 15872592286641467051
 physical_device_desc: &#34;device: XLA_GPU device&#34;
 , name: &#34;/device:GPU:0&#34;
 device_type: &#34;GPU&#34;
-memory_limit: 7338064608
+memory_limit: 7320569120
 locality {
   bus_id: 1
   links {
   }
 }
-incarnation: 7522579078223806691
+incarnation: 7767931843268375161
 physical_device_desc: &#34;device: 0, name: GeForce RTX 2060 SUPER, pci bus id: 0000:08:00.0, compute capability: 7.5&#34;
 ]
 </pre>
@@ -13786,26 +13786,26 @@ Non-trainable params: 0
 _________________________________________________________________
 Train on 110288 samples, validate on 27573 samples
 Epoch 1/10
-110288/110288 [==============================] - 35s 322us/step - loss: 1.2579 - accuracy: 0.6357 - val_loss: nan - val_accuracy: 0.6699
+110288/110288 [==============================] - 31s 282us/step - loss: 1.2661 - accuracy: 0.6354 - val_loss: nan - val_accuracy: 0.6786
 Epoch 2/10
-110288/110288 [==============================] - 30s 274us/step - loss: 0.8724 - accuracy: 0.7025 - val_loss: nan - val_accuracy: 0.7335
+110288/110288 [==============================] - 30s 273us/step - loss: 0.8772 - accuracy: 0.7003 - val_loss: nan - val_accuracy: 0.7046
 Epoch 3/10
-110288/110288 [==============================] - 30s 274us/step - loss: 0.7428 - accuracy: 0.7433 - val_loss: nan - val_accuracy: 0.7682
+110288/110288 [==============================] - 31s 278us/step - loss: 0.7272 - accuracy: 0.7508 - val_loss: nan - val_accuracy: 0.7569
 Epoch 4/10
-110288/110288 [==============================] - 30s 274us/step - loss: 0.6420 - accuracy: 0.7810 - val_loss: nan - val_accuracy: 0.8018
+110288/110288 [==============================] - 30s 275us/step - loss: 0.6362 - accuracy: 0.7838 - val_loss: nan - val_accuracy: 0.7994
 Epoch 5/10
-110288/110288 [==============================] - 30s 275us/step - loss: 0.5623 - accuracy: 0.8092 - val_loss: nan - val_accuracy: 0.8198
+110288/110288 [==============================] - 30s 269us/step - loss: 0.5855 - accuracy: 0.8008 - val_loss: nan - val_accuracy: 0.7590
 Epoch 6/10
-110288/110288 [==============================] - 30s 276us/step - loss: 0.5460 - accuracy: 0.8137 - val_loss: nan - val_accuracy: 0.8109
+110288/110288 [==============================] - 29s 267us/step - loss: 0.5462 - accuracy: 0.8145 - val_loss: nan - val_accuracy: 0.8401
 Epoch 7/10
-110288/110288 [==============================] - 30s 274us/step - loss: 0.5098 - accuracy: 0.8263 - val_loss: nan - val_accuracy: 0.8351
+110288/110288 [==============================] - 30s 270us/step - loss: 0.5067 - accuracy: 0.8281 - val_loss: nan - val_accuracy: 0.8311
 Epoch 8/10
-110288/110288 [==============================] - 30s 275us/step - loss: 0.4903 - accuracy: 0.8341 - val_loss: nan - val_accuracy: 0.8485
+110288/110288 [==============================] - 29s 266us/step - loss: 0.4836 - accuracy: 0.8352 - val_loss: nan - val_accuracy: 0.8359
 Epoch 9/10
-110288/110288 [==============================] - 30s 273us/step - loss: 0.4680 - accuracy: 0.8418 - val_loss: nan - val_accuracy: 0.8488
+110288/110288 [==============================] - 29s 266us/step - loss: 0.4598 - accuracy: 0.8438 - val_loss: nan - val_accuracy: 0.8525
 Epoch 10/10
-110288/110288 [==============================] - 30s 275us/step - loss: 0.4367 - accuracy: 0.8525 - val_loss: nan - val_accuracy: 0.7908
-new jersey est parfois chaud en l&#39; automne et il est neigeux en &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+110288/110288 [==============================] - 29s 265us/step - loss: 0.4227 - accuracy: 0.8574 - val_loss: nan - val_accuracy: 0.8607
+new jersey est parfois calme en l&#39; automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 </pre>
 </div>
 </div>
@@ -13842,7 +13842,7 @@ new jersey est parfois chaud en l&#39; automne et il est neigeux en &lt;PAD&gt; 
  new jersey is sometimes quiet during autumn , and it is snowy in april .
 
 Predicted sentence:        
- new jersey est parfois chaud en l&#39; automne et il est neigeux en &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+ new jersey est parfois calme en l&#39; automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 
 Translate French sentence: 
  new jersey est parfois calme pendant l&#39; automne , et il est neigeux en avril .
@@ -13866,7 +13866,7 @@ You've turned the words into ids, but there's a better representation of a word.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">embed_model</span><span class="p">(</span><span class="n">input_shape</span><span class="p">,</span> <span class="n">output_sequence_length</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">french_vocab_size</span><span class="p">):</span>
@@ -13889,7 +13889,7 @@ You've turned the words into ids, but there's a better representation of a word.
     <span class="n">inputs</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">shape</span> <span class="o">=</span> <span class="n">input_shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
     
     <span class="c1"># 2. Embedding layer</span>
-    <span class="n">embedding_layer</span> <span class="o">=</span> <span class="n">Embedding</span><span class="p">(</span><span class="n">embedding_size</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">)(</span><span class="n">inputs</span><span class="p">)</span>
+    <span class="n">embedding_layer</span> <span class="o">=</span> <span class="n">Embedding</span><span class="p">(</span><span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">embedding_size</span><span class="p">)(</span><span class="n">inputs</span><span class="p">)</span>
     <span class="c1"># 3. 1st layer - GRU</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">GRU</span><span class="p">(</span><span class="n">units</span> <span class="o">=</span> <span class="n">GRU_units</span><span class="p">,</span> <span class="n">return_sequences</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)(</span><span class="n">embedding_layer</span><span class="p">)</span>
     <span class="c1"># 4. 2nd layer - GRU</span>
@@ -13938,24 +13938,24 @@ You've turned the words into ids, but there's a better representation of a word.
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Model: &#34;model_4&#34;
+<pre>Model: &#34;model_2&#34;
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
-input_6 (InputLayer)         (None, 21)                0         
+input_2 (InputLayer)         (None, 21)                0         
 _________________________________________________________________
-embedding_5 (Embedding)      (None, 21, 199)           50944     
+embedding_1 (Embedding)      (None, 21, 256)           50944     
 _________________________________________________________________
-gru_9 (GRU)                  (None, 21, 512)           1093632   
+gru_3 (GRU)                  (None, 21, 512)           1181184   
 _________________________________________________________________
-gru_10 (GRU)                 (None, 21, 512)           1574400   
+gru_4 (GRU)                  (None, 21, 512)           1574400   
 _________________________________________________________________
-dense_6 (Dense)              (None, 21, 1376)          705888    
+dense_2 (Dense)              (None, 21, 1376)          705888    
 _________________________________________________________________
-dense_7 (Dense)              (None, 21, 344)           473688    
+dense_3 (Dense)              (None, 21, 344)           473688    
 =================================================================
-Total params: 3,898,552
-Trainable params: 3,898,552
+Total params: 3,986,104
+Trainable params: 3,986,104
 Non-trainable params: 0
 _________________________________________________________________
 </pre>
@@ -13982,25 +13982,25 @@ _________________________________________________________________
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Train on 110288 samples, validate on 27573 samples
 Epoch 1/10
-110288/110288 [==============================] - 49s 445us/step - loss: 0.7500 - accuracy: 0.7998 - val_loss: nan - val_accuracy: 0.8867
+110288/110288 [==============================] - 48s 435us/step - loss: 0.7613 - accuracy: 0.7982 - val_loss: nan - val_accuracy: 0.8958
 Epoch 2/10
-110288/110288 [==============================] - 47s 430us/step - loss: 0.2686 - accuracy: 0.9086 - val_loss: nan - val_accuracy: 0.9181
+110288/110288 [==============================] - 47s 429us/step - loss: 0.2662 - accuracy: 0.9096 - val_loss: nan - val_accuracy: 0.9172
 Epoch 3/10
-110288/110288 [==============================] - 48s 434us/step - loss: 0.2173 - accuracy: 0.9244 - val_loss: nan - val_accuracy: 0.9269
+110288/110288 [==============================] - 48s 437us/step - loss: 0.2181 - accuracy: 0.9244 - val_loss: nan - val_accuracy: 0.9269
 Epoch 4/10
-110288/110288 [==============================] - 47s 431us/step - loss: 0.1969 - accuracy: 0.9308 - val_loss: nan - val_accuracy: 0.9324
+110288/110288 [==============================] - 48s 432us/step - loss: 0.1971 - accuracy: 0.9307 - val_loss: nan - val_accuracy: 0.9322
 Epoch 5/10
-110288/110288 [==============================] - 47s 431us/step - loss: 0.1843 - accuracy: 0.9342 - val_loss: nan - val_accuracy: 0.9335
+110288/110288 [==============================] - 47s 429us/step - loss: 0.1849 - accuracy: 0.9339 - val_loss: nan - val_accuracy: 0.9329
 Epoch 6/10
-110288/110288 [==============================] - 48s 434us/step - loss: 0.1778 - accuracy: 0.9360 - val_loss: nan - val_accuracy: 0.9344
+110288/110288 [==============================] - 47s 429us/step - loss: 0.1768 - accuracy: 0.9361 - val_loss: nan - val_accuracy: 0.9362
 Epoch 7/10
-110288/110288 [==============================] - 47s 431us/step - loss: 0.1698 - accuracy: 0.9383 - val_loss: nan - val_accuracy: 0.9341
+110288/110288 [==============================] - 49s 441us/step - loss: 0.1692 - accuracy: 0.9382 - val_loss: nan - val_accuracy: 0.9367
 Epoch 8/10
-110288/110288 [==============================] - 47s 430us/step - loss: 0.1692 - accuracy: 0.9384 - val_loss: nan - val_accuracy: 0.9351
+110288/110288 [==============================] - 47s 430us/step - loss: 0.1664 - accuracy: 0.9390 - val_loss: nan - val_accuracy: 0.9349
 Epoch 9/10
-110288/110288 [==============================] - 48s 432us/step - loss: 0.1634 - accuracy: 0.9399 - val_loss: nan - val_accuracy: 0.9359
+110288/110288 [==============================] - 47s 425us/step - loss: 0.1622 - accuracy: 0.9400 - val_loss: nan - val_accuracy: 0.9362
 Epoch 10/10
-110288/110288 [==============================] - 47s 430us/step - loss: 0.1584 - accuracy: 0.9412 - val_loss: nan - val_accuracy: 0.9369
+110288/110288 [==============================] - 47s 424us/step - loss: 0.1599 - accuracy: 0.9407 - val_loss: nan - val_accuracy: 0.9369
 new jersey est parfois calme en l&#39; automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 </pre>
 </div>
@@ -14012,7 +14012,7 @@ new jersey est parfois calme en l&#39; automne et il est neigeux en avril &lt;PA
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;English sentence:            </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">english_sentences</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
@@ -14061,7 +14061,7 @@ One restriction of a RNN is that it can't see the future input, only the past.  
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">bd_model</span><span class="p">(</span><span class="n">input_shape</span><span class="p">,</span> <span class="n">output_sequence_length</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">french_vocab_size</span><span class="p">):</span>
@@ -14131,19 +14131,19 @@ One restriction of a RNN is that it can't see the future input, only the past.  
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Model: &#34;model_6&#34;
+<pre>Model: &#34;model_3&#34;
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
-input_8 (InputLayer)         (None, 21, 1)             0         
+input_3 (InputLayer)         (None, 21, 1)             0         
 _________________________________________________________________
-bidirectional_3 (Bidirection (None, 21, 1024)          1579008   
+bidirectional_1 (Bidirection (None, 21, 1024)          1579008   
 _________________________________________________________________
-bidirectional_4 (Bidirection (None, 21, 1024)          4721664   
+bidirectional_2 (Bidirection (None, 21, 1024)          4721664   
 _________________________________________________________________
-time_distributed_2 (TimeDist (None, 21, 1376)          1410400   
+time_distributed_1 (TimeDist (None, 21, 1376)          1410400   
 _________________________________________________________________
-dense_11 (Dense)             (None, 21, 344)           473688    
+dense_5 (Dense)              (None, 21, 344)           473688    
 =================================================================
 Total params: 8,184,760
 Trainable params: 8,184,760
@@ -14151,26 +14151,26 @@ Non-trainable params: 0
 _________________________________________________________________
 Train on 110288 samples, validate on 27573 samples
 Epoch 1/10
-110288/110288 [==============================] - 92s 837us/step - loss: 1.0263 - accuracy: 0.6878 - val_loss: nan - val_accuracy: 0.7697
+110288/110288 [==============================] - 92s 832us/step - loss: 1.0217 - accuracy: 0.6898 - val_loss: nan - val_accuracy: 0.7685
 Epoch 2/10
-110288/110288 [==============================] - 92s 833us/step - loss: 0.6042 - accuracy: 0.7844 - val_loss: nan - val_accuracy: 0.7930
+110288/110288 [==============================] - 91s 823us/step - loss: 0.6109 - accuracy: 0.7829 - val_loss: nan - val_accuracy: 0.7773
 Epoch 3/10
-110288/110288 [==============================] - 91s 825us/step - loss: 0.4705 - accuracy: 0.8292 - val_loss: nan - val_accuracy: 0.8637
+110288/110288 [==============================] - 90s 817us/step - loss: 0.5058 - accuracy: 0.8134 - val_loss: nan - val_accuracy: 0.8025
 Epoch 4/10
-110288/110288 [==============================] - 91s 824us/step - loss: 0.4268 - accuracy: 0.8459 - val_loss: nan - val_accuracy: 0.8789
+110288/110288 [==============================] - 91s 823us/step - loss: 0.4012 - accuracy: 0.8542 - val_loss: nan - val_accuracy: 0.7709
 Epoch 5/10
-110288/110288 [==============================] - 91s 827us/step - loss: 0.3872 - accuracy: 0.8603 - val_loss: nan - val_accuracy: 0.8096
+110288/110288 [==============================] - 91s 828us/step - loss: 0.3816 - accuracy: 0.8610 - val_loss: nan - val_accuracy: 0.8688
 Epoch 6/10
-110288/110288 [==============================] - 91s 826us/step - loss: 0.3349 - accuracy: 0.8788 - val_loss: nan - val_accuracy: 0.7799
+110288/110288 [==============================] - 92s 831us/step - loss: 0.3428 - accuracy: 0.8757 - val_loss: nan - val_accuracy: 0.8775
 Epoch 7/10
-110288/110288 [==============================] - 91s 828us/step - loss: 0.3140 - accuracy: 0.8858 - val_loss: nan - val_accuracy: 0.9029
+110288/110288 [==============================] - 91s 827us/step - loss: 0.3187 - accuracy: 0.8850 - val_loss: nan - val_accuracy: 0.9041
 Epoch 8/10
-110288/110288 [==============================] - 91s 826us/step - loss: 0.3058 - accuracy: 0.8903 - val_loss: nan - val_accuracy: 0.8997
+110288/110288 [==============================] - 91s 827us/step - loss: 0.2814 - accuracy: 0.8969 - val_loss: nan - val_accuracy: 0.9154
 Epoch 9/10
-110288/110288 [==============================] - 91s 823us/step - loss: 0.2717 - accuracy: 0.9002 - val_loss: nan - val_accuracy: 0.8873
+110288/110288 [==============================] - 92s 831us/step - loss: 0.2721 - accuracy: 0.9028 - val_loss: nan - val_accuracy: 0.9120
 Epoch 10/10
-110288/110288 [==============================] - 92s 831us/step - loss: 0.2747 - accuracy: 0.9014 - val_loss: nan - val_accuracy: 0.9129
-new jersey est parfois calme au l&#39; de l&#39; il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+110288/110288 [==============================] - 93s 844us/step - loss: 0.2532 - accuracy: 0.9081 - val_loss: nan - val_accuracy: 0.9187
+new jersey est parfois calme pendant l&#39; automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 </pre>
 </div>
 </div>
@@ -14181,7 +14181,7 @@ new jersey est parfois calme au l&#39; de l&#39; il est neigeux en avril &lt;PAD
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;English sentence:            </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">english_sentences</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
@@ -14207,7 +14207,7 @@ new jersey est parfois calme au l&#39; de l&#39; il est neigeux en avril &lt;PAD
  new jersey is sometimes quiet during autumn , and it is snowy in april .
 
 Predicted sentence:        
- new jersey est parfois calme au l&#39; de l&#39; il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+ new jersey est parfois calme pendant l&#39; automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 
 Translate French sentence: 
  new jersey est parfois calme pendant l&#39; automne , et il est neigeux en avril .
@@ -14230,7 +14230,7 @@ Translate French sentence:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">encdec_model</span><span class="p">(</span><span class="n">input_shape</span><span class="p">,</span> <span class="n">output_sequence_length</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">french_vocab_size</span><span class="p">):</span>
@@ -14304,21 +14304,21 @@ Translate French sentence:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Model: &#34;model_7&#34;
+<pre>Model: &#34;model_4&#34;
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
-input_9 (InputLayer)         (None, 21, 1)             0         
+input_4 (InputLayer)         (None, 21, 1)             0         
 _________________________________________________________________
-gru_15 (GRU)                 (None, 512)               789504    
+gru_7 (GRU)                  (None, 512)               789504    
 _________________________________________________________________
 repeat_vector_1 (RepeatVecto (None, 21, 512)           0         
 _________________________________________________________________
-gru_16 (GRU)                 (None, 21, 512)           1574400   
+gru_8 (GRU)                  (None, 21, 512)           1574400   
 _________________________________________________________________
-dense_12 (Dense)             (None, 21, 1376)          705888    
+dense_6 (Dense)              (None, 21, 1376)          705888    
 _________________________________________________________________
-time_distributed_3 (TimeDist (None, 21, 344)           473688    
+time_distributed_2 (TimeDist (None, 21, 344)           473688    
 =================================================================
 Total params: 3,543,480
 Trainable params: 3,543,480
@@ -14326,26 +14326,26 @@ Non-trainable params: 0
 _________________________________________________________________
 Train on 110288 samples, validate on 27573 samples
 Epoch 1/10
-110288/110288 [==============================] - 46s 418us/step - loss: 1.6185 - accuracy: 0.5817 - val_loss: nan - val_accuracy: 0.6479
+110288/110288 [==============================] - 47s 424us/step - loss: 1.6118 - accuracy: 0.5829 - val_loss: nan - val_accuracy: 0.6339
 Epoch 2/10
-110288/110288 [==============================] - 45s 409us/step - loss: 1.0838 - accuracy: 0.6671 - val_loss: nan - val_accuracy: 0.6931
+110288/110288 [==============================] - 45s 405us/step - loss: 1.0927 - accuracy: 0.6643 - val_loss: nan - val_accuracy: 0.6942
 Epoch 3/10
-110288/110288 [==============================] - 45s 409us/step - loss: 0.8848 - accuracy: 0.7148 - val_loss: nan - val_accuracy: 0.7078
+110288/110288 [==============================] - 45s 406us/step - loss: 0.8977 - accuracy: 0.7080 - val_loss: nan - val_accuracy: 0.7328
 Epoch 4/10
-110288/110288 [==============================] - 45s 409us/step - loss: 0.7318 - accuracy: 0.7545 - val_loss: nan - val_accuracy: 0.7664
+110288/110288 [==============================] - 44s 403us/step - loss: 0.7762 - accuracy: 0.7378 - val_loss: nan - val_accuracy: 0.7662
 Epoch 5/10
-110288/110288 [==============================] - 45s 410us/step - loss: 0.6314 - accuracy: 0.7797 - val_loss: nan - val_accuracy: 0.8011
+110288/110288 [==============================] - 45s 407us/step - loss: 0.6860 - accuracy: 0.7641 - val_loss: nan - val_accuracy: 0.7683
 Epoch 6/10
-110288/110288 [==============================] - 46s 417us/step - loss: 0.5540 - accuracy: 0.7986 - val_loss: nan - val_accuracy: 0.8031
+110288/110288 [==============================] - 44s 401us/step - loss: 0.6274 - accuracy: 0.7827 - val_loss: nan - val_accuracy: 0.7943
 Epoch 7/10
-110288/110288 [==============================] - 46s 415us/step - loss: 0.4918 - accuracy: 0.8182 - val_loss: nan - val_accuracy: 0.8378
+110288/110288 [==============================] - 44s 402us/step - loss: 0.5924 - accuracy: 0.7936 - val_loss: nan - val_accuracy: 0.7756
 Epoch 8/10
-110288/110288 [==============================] - 46s 415us/step - loss: 0.4654 - accuracy: 0.8276 - val_loss: nan - val_accuracy: 0.8170
+110288/110288 [==============================] - 44s 402us/step - loss: 0.5613 - accuracy: 0.8029 - val_loss: nan - val_accuracy: 0.8249
 Epoch 9/10
-110288/110288 [==============================] - 46s 418us/step - loss: 0.4316 - accuracy: 0.8388 - val_loss: nan - val_accuracy: 0.8501
+110288/110288 [==============================] - 44s 402us/step - loss: 0.5355 - accuracy: 0.8116 - val_loss: nan - val_accuracy: 0.7551
 Epoch 10/10
-110288/110288 [==============================] - 46s 416us/step - loss: 0.4016 - accuracy: 0.8501 - val_loss: nan - val_accuracy: 0.8695
-new jersey est parfois calme au cours automne l&#39; est et il en &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+110288/110288 [==============================] - 44s 402us/step - loss: 0.5159 - accuracy: 0.8146 - val_loss: nan - val_accuracy: 0.8192
+new jersey est parfois calme pendant l&#39; automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 </pre>
 </div>
 </div>
@@ -14364,7 +14364,7 @@ new jersey est parfois calme au cours automne l&#39; est et il en &lt;PAD&gt; &l
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">model_final</span><span class="p">(</span><span class="n">input_shape</span><span class="p">,</span> <span class="n">output_sequence_length</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">french_vocab_size</span><span class="p">):</span>
@@ -14377,16 +14377,16 @@ new jersey est parfois calme au cours automne l&#39; est et il en &lt;PAD&gt; &l
 <span class="sd">    :return: Keras model built, but not trained</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">1e-3</span>
-    <span class="n">embedding_size</span> <span class="o">=</span> <span class="mi">256</span>
+    <span class="n">embedding_size</span> <span class="o">=</span> <span class="mi">128</span>
     <span class="n">GRU_units_num</span> <span class="o">=</span> <span class="mi">512</span>
-    <span class="n">FCL_units_num</span> <span class="o">=</span> <span class="n">french_vocab_size</span><span class="o">*</span><span class="mi">4</span>
+    <span class="n">FCL_units_num</span> <span class="o">=</span> <span class="n">french_vocab_size</span> <span class="o">*</span> <span class="mi">4</span>
     
     <span class="c1"># Build the model</span>
     <span class="c1"># 1. Inputs</span>
     <span class="n">inputs</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">shape</span> <span class="o">=</span> <span class="n">input_shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
     
     <span class="c1"># 2. Embedding layer</span>
-    <span class="n">embedding_layer</span> <span class="o">=</span> <span class="n">Embedding</span><span class="p">(</span><span class="n">embedding_size</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">)(</span><span class="n">inputs</span><span class="p">)</span>
+    <span class="n">embedding_layer</span> <span class="o">=</span> <span class="n">Embedding</span><span class="p">(</span><span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">embedding_size</span><span class="p">)(</span><span class="n">inputs</span><span class="p">)</span>
     <span class="c1"># 3. GRU Layer</span>
     <span class="n">encoder</span> <span class="o">=</span> <span class="n">Bidirectional</span><span class="p">(</span><span class="n">GRU</span><span class="p">(</span><span class="n">units</span> <span class="o">=</span> <span class="n">GRU_units_num</span><span class="p">,</span> <span class="n">return_sequences</span> <span class="o">=</span> <span class="kc">False</span><span class="p">))(</span><span class="n">embedding_layer</span><span class="p">)</span>
     <span class="c1"># Feed 2D output of the encoder to the 3D input of the decoder</span>
@@ -14407,11 +14407,6 @@ new jersey est parfois calme au cours automne l&#39; est et il en &lt;PAD&gt; &l
     <span class="k">return</span> <span class="n">model</span>
 
 <span class="c1">#tests.test_model_final(model_final)</span>
-<span class="c1"># serialize model to JSON</span>
-<span class="n">model_json</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">to_json</span><span class="p">()</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;model.json&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
-    <span class="n">json_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">model_json</span><span class="p">)</span>
-
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Final Model Loaded&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -14465,13 +14460,18 @@ new jersey est parfois calme au cours automne l&#39; est et il en &lt;PAD&gt; &l
         <span class="nb">len</span><span class="p">(</span><span class="n">x_tk</span><span class="o">.</span><span class="n">word_index</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
         <span class="nb">len</span><span class="p">(</span><span class="n">y_tk</span><span class="o">.</span><span class="n">word_index</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
     <span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+    <span class="c1"># serialize model to JSON</span>
+    <span class="n">model_json</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">to_json</span><span class="p">()</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;model.json&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
+        <span class="n">json_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">model_json</span><span class="p">)</span>
+
     <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">128</span><span class="p">,</span> <span class="n">epochs</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
     
     <span class="c1"># serialize weights to HDF5</span>
     <span class="n">model</span><span class="o">.</span><span class="n">save_weights</span><span class="p">(</span><span class="s2">&quot;model.h5&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Saved model to disk&quot;</span><span class="p">)</span>
     
-    <span class="c1">## DON&#39;T EDIT ANYTHING BELOW THIS LINE</span>
+    <span class="c1"># DON&#39;T EDIT ANYTHING BELOW THIS LINE</span>
     <span class="n">y_id_to_word</span> <span class="o">=</span> <span class="p">{</span><span class="n">value</span><span class="p">:</span> <span class="n">key</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">y_tk</span><span class="o">.</span><span class="n">word_index</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
     <span class="n">y_id_to_word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&lt;PAD&gt;&#39;</span>
 
@@ -14506,49 +14506,49 @@ new jersey est parfois calme au cours automne l&#39; est et il en &lt;PAD&gt; &l
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Model: &#34;model_9&#34;
+<pre>Model: &#34;model_5&#34;
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
-input_11 (InputLayer)        (None, 15)                0         
+input_5 (InputLayer)         (None, 15)                0         
 _________________________________________________________________
-embedding_7 (Embedding)      (None, 15, 200)           51200     
+embedding_2 (Embedding)      (None, 15, 128)           25600     
 _________________________________________________________________
-bidirectional_7 (Bidirection (None, 1024)              2190336   
+bidirectional_3 (Bidirection (None, 1024)              1969152   
 _________________________________________________________________
-repeat_vector_3 (RepeatVecto (None, 21, 1024)          0         
+repeat_vector_2 (RepeatVecto (None, 21, 1024)          0         
 _________________________________________________________________
-bidirectional_8 (Bidirection (None, 21, 1024)          4721664   
+bidirectional_4 (Bidirection (None, 21, 1024)          4721664   
 _________________________________________________________________
-time_distributed_6 (TimeDist (None, 21, 1380)          1414500   
+time_distributed_3 (TimeDist (None, 21, 1380)          1414500   
 _________________________________________________________________
-time_distributed_7 (TimeDist (None, 21, 345)           476445    
+time_distributed_4 (TimeDist (None, 21, 345)           476445    
 =================================================================
-Total params: 8,854,145
-Trainable params: 8,854,145
+Total params: 8,607,361
+Trainable params: 8,607,361
 Non-trainable params: 0
 _________________________________________________________________
 Train on 110288 samples, validate on 27573 samples
 Epoch 1/10
-110288/110288 [==============================] - 85s 766us/step - loss: 1.1485 - accuracy: 0.6990 - val_loss: 0.6133 - val_accuracy: 0.8151
+110288/110288 [==============================] - 82s 741us/step - loss: 1.2654 - accuracy: 0.6726 - val_loss: 0.7305 - val_accuracy: 0.7822
 Epoch 2/10
-110288/110288 [==============================] - 83s 753us/step - loss: 0.4018 - accuracy: 0.8775 - val_loss: 0.2398 - val_accuracy: 0.9267
+110288/110288 [==============================] - 81s 731us/step - loss: 0.4907 - accuracy: 0.8517 - val_loss: 0.3333 - val_accuracy: 0.8974
 Epoch 3/10
-110288/110288 [==============================] - 83s 756us/step - loss: 0.2082 - accuracy: 0.9361 - val_loss: 0.1654 - val_accuracy: 0.9495
+110288/110288 [==============================] - 81s 732us/step - loss: 0.2433 - accuracy: 0.9246 - val_loss: 0.2361 - val_accuracy: 0.9282
 Epoch 4/10
-110288/110288 [==============================] - 83s 757us/step - loss: 0.1437 - accuracy: 0.9560 - val_loss: 0.1270 - val_accuracy: 0.9622
+110288/110288 [==============================] - 81s 731us/step - loss: 0.1685 - accuracy: 0.9472 - val_loss: 0.1478 - val_accuracy: 0.9546
 Epoch 5/10
-110288/110288 [==============================] - 84s 762us/step - loss: 0.1196 - accuracy: 0.9638 - val_loss: 0.1643 - val_accuracy: 0.9507
+110288/110288 [==============================] - 82s 741us/step - loss: 0.1297 - accuracy: 0.9597 - val_loss: 0.1173 - val_accuracy: 0.9646
 Epoch 6/10
-110288/110288 [==============================] - 85s 770us/step - loss: 0.0991 - accuracy: 0.9704 - val_loss: 0.1062 - val_accuracy: 0.9703
+110288/110288 [==============================] - 81s 734us/step - loss: 0.1019 - accuracy: 0.9686 - val_loss: 0.1033 - val_accuracy: 0.9684
 Epoch 7/10
-110288/110288 [==============================] - 84s 760us/step - loss: 0.0910 - accuracy: 0.9735 - val_loss: 0.0916 - val_accuracy: 0.9737
+110288/110288 [==============================] - 84s 760us/step - loss: 0.0929 - accuracy: 0.9715 - val_loss: 0.0921 - val_accuracy: 0.9721
 Epoch 8/10
-110288/110288 [==============================] - 84s 757us/step - loss: 0.0733 - accuracy: 0.9786 - val_loss: 0.0835 - val_accuracy: 0.9766
+110288/110288 [==============================] - 86s 784us/step - loss: 0.0807 - accuracy: 0.9753 - val_loss: 0.0859 - val_accuracy: 0.9749
 Epoch 9/10
-110288/110288 [==============================] - 83s 751us/step - loss: 0.0683 - accuracy: 0.9803 - val_loss: 0.0819 - val_accuracy: 0.9778
+110288/110288 [==============================] - 85s 768us/step - loss: 0.0726 - accuracy: 0.9780 - val_loss: 0.0816 - val_accuracy: 0.9760
 Epoch 10/10
- 76288/110288 [===================&gt;..........] - ETA: 24s - loss: 0.0578 - accuracy: 0.9834</pre>
+ 46208/110288 [===========&gt;..................] - ETA: 47s - loss: 0.0591 - accuracy: 0.9820</pre>
 </div>
 </div>
 
