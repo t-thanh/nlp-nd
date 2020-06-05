@@ -1,6 +1,6 @@
 # Udacity - Natural Language Processing Nanodegree
 
-![NLP](nlpnd-certificate.png)
+<a href="https://graduation.udacity.com/confirm/LML2TLQV">![NLP](nlp-certificate.png)</a>
 
 # Master Natural Language Processing
 Learn cutting-edge natural language processing techniques to process speech and analyze text. Build probabilistic and deep learning models, such as hidden Markov models and recurrent neural networks, to teach the computer to do tasks such as speech recognition, machine translation, and more!
